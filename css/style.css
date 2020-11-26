@@ -1,0 +1,741 @@
+/*=================== Global Style ===================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*=================== Global Style Ends ===================*/
+
+/*=================== Branding & Navigation Style ===================*/
+.site-brand-navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px;
+    z-index: 3;
+}
+
+.site-navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 10px;
+}
+
+.site-navigation-list-item {
+    margin-right: 2.5rem;
+}
+
+.site-navigation-list-item:first-child a {
+    color: #00cbd7;
+}
+
+.site-navigation-list-item:first-child a .fa-crown{
+    margin-right: 5px;
+}
+
+.site-navigation-list-item:first-child a .fa-angle-down{
+    margin-left: 5px;
+}
+
+.site-navigation-list-item:last-child {
+    margin-right: 0;
+}
+
+.site-navigation-list-item:last-child a {
+    padding: 5px 30px;
+    background-color: #ff3366;
+    border-radius: 5px;
+    color: white;
+}
+
+.burger-menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .site-brand-navigation-bar {
+        padding: 30px 30px 20px 30px;
+    }
+    .site-navigation-area {
+        display: none;
+    }
+
+    .burger-menu-icon {
+        display: flex;
+        font-size: 2rem;
+    }
+}
+
+/*=================== Branding & Navigation Style Ends ===================*/
+
+/*=================== Hero Section Style ===================*/
+.site-hero-section {
+    padding: 100px 50px 150px 50px;
+    background: url("../image/first-section-background.png") no-repeat center center;
+    background-size: cover;
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.site-hero-section-inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-hero-text-area {
+    text-align: center;
+    color: white;
+}
+
+.site-hero-text-area p {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #c3c3c3;
+}
+
+.site-hero-text-area h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+
+.site-hero-why-win {
+    text-align: center;
+}
+
+.site-hero-why-win p {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.site-hero-why-win p i {
+    margin-right: 5px;
+    font-size: 2.5em;
+    color: #00cbd7;
+}
+
+.site-hero-technologies {
+    margin: 50px 0 400px 0;
+}
+
+.site-hero-technology-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: rgba(23, 26, 84, .7);
+    box-shadow: 5px 5px 20px rgba(0, 203, 215, .3);
+}
+
+.card-image {
+    margin: 0 auto;
+}
+
+.contacting-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .site-hero-section {
+        margin-top: -100px;
+    }
+
+    .site-hero-text-area p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .site-hero-text-area h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .site-hero-why-win p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .site-hero-why-win p i {
+        margin-right: 5px;
+    }
+
+    .site-hero-technologies {
+        margin-bottom: 20px;
+    }
+
+    .site-hero-technology-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+        box-shadow: none;
+    }
+
+    .card:nth-child(1), .card:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .card-image {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .card-image img {
+        width: 90%;
+    }
+
+    .contacting-button {
+        display: flex;
+    }
+
+    .contacting-button .hero-contact-button {
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #ff3366;
+        color: white;
+        outline: none;
+        border: none;
+        font-size: 1.2em;
+    }
+}
+
+
+/*=================== Hero Section Style Ends ===================*/
+
+/*=================== Features Section Style ===================*/
+.site-feature-section {
+    background: url("../image/second-section-background.png") no-repeat center center;
+    background-size: cover;
+    padding: 100px 0 120px 0;
+    /*z-index: 1;*/
+    margin-top: -200px;
+}
+.site-feature-section-inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-feature-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.feature-card {
+    width: 31%;
+    /*padding: 20px;*/
+    background: white;
+    border-radius: 10px;
+    z-index: 3;
+    height: 600px;
+    margin-top: -250px;
+}
+
+.feature-card .card-header{
+    background: url("../image/feature-image.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    padding: 20px;
+}
+
+.feature-card:nth-child(2) {
+    margin-top: -300px;
+}
+
+.card-header .card-logo {
+    margin-bottom: 4rem;
+}
+
+.card-header .card-title h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.feature-card .card-body {
+    padding: 20px;
+    font-size: .9em;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 30px;
+    font-size: .9em;
+}
+
+.card-footer a {
+    color: #ff3366;
+}
+
+.site-feature-section-title h1, .partners-section-title h1 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.site-feature-section-title h1 span, .partners-section-title h1 span {
+    font-weight: 600;
+}
+
+.expertise-area .expertise-description-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.expertise-description-card {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: .8em;
+}
+
+.expertise-description-card i {
+    margin-right: 10px;
+    font-size: 1.8em;
+    margin-top: 5px;
+    color: #00cbd7;
+}
+
+.expertise-description-card h4 {
+    font-size: 1.3em;
+}
+
+@media (max-width: 768px) {
+    .site-feature-section {
+        margin-top: -120px;
+    }
+
+    .site-feature-cards {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .feature-card {
+        width: 93%;
+        /*margin-top: 0;*/
+        /*margin-bottom: 20px;*/
+        margin: 0 auto;
+    }
+
+    .feature-card:nth-child(2), .feature-card:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    .feature-card .card-body {
+        padding: 40px;
+        font-size: .9em;
+    }
+
+    .expertise-area .expertise-description-cards {
+        flex-direction: column;
+    }
+
+    .expertise-description-card {
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+}
+/*=================== Features Section Style Ends ===================*/
+
+/*=================== Partners Section Style ===================*/
+
+.partners-section {
+    max-width: 1200px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.partners-section-title h1 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.partners-section-title h1 span {
+    font-weight: 600;
+}
+
+.partners-section-brands-area {
+    margin-top: 20px;
+}
+
+.partners-section-brands-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.partners-section-brands-list li {
+    width: 16%;
+    padding: 30px 50px;
+}
+
+@media (max-width: 768px) {
+    .partners-section {
+        padding: 15px 30px;
+    }
+
+    .partners-section-brands-list {
+        flex-wrap: wrap;
+    }
+
+    .partners-section-brands-list li {
+        width: 45%;
+    }
+}
+/*=================== Partners Section Style Ends ===================*/
+
+/*=================== What This Means Section Style ===================*/
+.what-this-means-section {
+    background: url("../image/forth-section-background.png") no-repeat center center;
+    background-size: cover;
+    padding: 200px 0;
+    z-index: 3;
+}
+
+.what-this-means-description {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.description-text-area {
+    width: 50%;
+}
+
+.what-this-means-description-title {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.what-this-means-description-title span {
+    font-weight: 600;
+}
+
+.what-this-means-description-message {
+    margin-top: 10px;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .what-this-means-section {
+        background: url("../image/mobile/mob-forth-section-background.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    .description-text-area {
+        width: 85%;
+        margin: 50% auto 50px auto;
+    }
+
+    .what-this-means-description-message {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+}
+/*=================== What This Means Section Style Ends ===================*/
+
+/*=================== Contact Us Style ===================*/
+.contact-us {
+    background: url("../image/contact-form-background.png") no-repeat center center;
+    background-size: cover;
+    padding: 300px 0 50px 0;
+    margin-top: -300px;
+}
+
+.contact-us-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-us-form-title {
+    color: white;
+    margin-top: 50px;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: baseline;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.form-control-input {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.form-control-input input{
+    padding: 20px 30px;
+    width: 100%;
+    font-size: .8em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+.form-control-input button{
+    color: white;
+    width: 100%;
+    background: #ff3366;
+    padding: 20px 25px;
+    border-radius: 5px;
+    font-size: .9em;
+    outline: none;
+    border: none;
+}
+
+.form-control-input button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        background: url("../image/mobile/mob-fifth-section-background.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    .contact-us-form-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-us-form-title {
+        font-size: 1.8em;
+    }
+
+    .contact-us-form {
+        flex-direction: column;
+    }
+
+    .form-control-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .form-control-input input, .form-control-input button {
+        padding: 30px 20px;
+        font-size: 1.4em;
+    }
+}
+/*=================== Contact Us Style Ends ===================*/
+
+/*=================== Workspace Section Style ===================*/
+.workspace {
+    padding: 100px 0;
+}
+
+.workspace-row {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.workspace-col {
+    width: 49%;
+}
+
+.workspace-col img {
+    width: 100%;
+}
+
+.workspace-col .workspace-detail {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .workspace {
+        padding: 50px;
+    }
+
+    .workspace-row {
+        flex-direction: column;
+    }
+
+    .workspace-col {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/*=================== Workspace Section Style Ends ===================*/
+
+/*=================== Site Footer Style ===================*/
+.site-footer {
+    background: url("../image/footer-background.png") no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.site-footer-row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-logo-white {
+    margin-bottom: 10px;
+}
+
+.footer-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-col {
+    width: 30%;
+}
+
+.footer-col:nth-child(1) {
+    width: 36%;
+}
+
+.site-footer .services-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.site-footer .services-list ul {
+    list-style-type: disc;
+}
+
+.site-footer .framework-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.framework-row .framework-col {
+    width: 48%;
+}
+
+.framework-col img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.framework-col:nth-child(1) {
+    margin-top: 20px;
+}
+
+.framework-col:nth-child(3) {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        background: url("../image/mobile/mob-footer-background.png") no-repeat center center;
+        background-size: cover;
+        padding: 100px 0;
+    }
+
+    .site-footer-row {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .site-footer-row .footer-contents {
+        flex-direction: column;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-col:nth-child(1) {
+         width: 100%;
+     }
+}
+
+/*=================== Site Footer Style Ends ===================*/
+
+/*=================== Site Copyright Section Style ===================*/
+.copyright-section {
+    background-color: #14164b;
+}
+
+.copyright-section-inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #00cbd7;
+}
+
+.copyright-section-inner-container p:first-child {
+    margin-right: 20px;
+}
+
+.copyright-section-inner-container p:last-child {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .copyright-section-inner-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .copyright-section-inner-container {
+        font-size: .6em;
+    }
+}
+/*=================== Site Copyright Section Style Ends ===================*/
